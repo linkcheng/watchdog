@@ -9,6 +9,7 @@
 DB.py
 APP.py
 /.idea/
+.vscode/
 __pycache__/
 /deploy
 /venv/
