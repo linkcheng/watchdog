@@ -1,0 +1,15 @@
+*.py[cod]
+*.conf
+*.ini
+*.log
+*.yaml
+*.prof
+*.cprof
+.DS_Store
+DB.py
+APP.py
+/.idea/
+__pycache__/
+/deploy
+/venv/
+/venv3/

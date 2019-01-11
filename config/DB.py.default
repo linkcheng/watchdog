@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+
+INFLUXDB_CONFIG = {
+    'host': '127.0.0.1',
+    'port': 8086,
+    'username': 'root',
+    'password': 'root',
+}
+
+REDIS_URL = 'redis://localhost:6379'
+STATISTICS_URL = 'mysql+pymysql://root:1234qwer@127.0.0.1:3306/statistics?charset=utf8'
+V2_URL = 'mysql+pymysql://root:1234qwer@127.0.0.1:3306/v2?charset=utf8'
+RISK_URL = 'mysql+pymysql://root:1234qwer@127.0.0.1:3306/risk?charset=utf8'

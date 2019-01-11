@@ -1,0 +1,11 @@
+celery==4.2.1
+Werkzeug==0.11.11
+click==6.7
+pytz==2017.2
+numpy==1.14.5
+scipy==1.1.0
+influxdb==5.2.0
+raven==6.9.0
+PyMySQL==0.8.0
+SQLAlchemy==1.2.10
+redis==2.10.6

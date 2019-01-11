@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+from config.DB import (
+    V2_URL,
+    RISK_URL,
+    STATISTICS_URL
+)
+
+# 日志目录
+LOG_PATH = '.'
+
+# influxdb 数据库的名称
+INFLUXDB_DATABASE_NAME = 'watchdog'
+
+# 配置信息的库，名称
+DB_NAME = 'statistics'
+
+# 配置信息表库的配置
+DB_URL = STATISTICS_URL
+
+# 计算平均值时使用的历史数据长度，单位 day
+MEAN_PERIOD = 15
+
+# MIN_ALERT_VALUE 最小报警差值，即大于真实值与期望值之差的最小值才触发报警
+MIN_ALERT_VALUE = 4
+
+# 计算线性回归的预测值时使用多长时间的历史数据，单位 minute
+EXPECT_PERIOD = 45
+
+# sentry dsn
+SENTRY_DSN = ''
+
+# 是否启用错误跟踪以及邮件通知
+ENABLE_TRACK = True
+
+# This is a set. 忽略的错误跟踪
+IGNORE_EXCEPTIONS = {}
+
+# This is a set. 有效的监控关键字
+ACTIVE_EVENT_KEYS = {
+    # 'count_application2_success_5min',
+}
+
+# This is a dict
+TABLE_CONFIG = {
+    # table_name
+    'v2.Application2': {
+        'url': V2_URL,
+        'created_time': 'created_time',
+        'updated_time': 'updated_time',
+    },
+    'risk.CashActivationLog': {
+        'url': RISK_URL,
+        'created_time': 'row_crt_ts',
+        'updated_time': 'row_upd_ts',
+    },
+    'v2.CashLoanOrder': {
+        'url': V2_URL,
+        'created_time': 'created_time',
+        'updated_time': 'updated_time',
+    },
+    'v2.Order': {
+        'url': V2_URL,
+        'created_time': 'created_time',
+        'updated_time': 'updated_time',
+    },
+    'v2.User': {
+        'url': V2_URL,
+        'created_time': 'created_time',
+        'updated_time': 'updated_time',
+    }
+}
