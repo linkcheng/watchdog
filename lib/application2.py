@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 """
 @author: Link 
-@contact: zheng.long@shoufuyou.com
+@contact: zheng.long@sfy.com
 @module: application2
 @date: 2018/7/23
 """
@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 class CountApplication25Min(Base):
     _event_key = 'count_application2_success_5min'
-    schema = 'shoufuyou_v2'
+    schema = 'sfy_v2'
     table = 'Application2'
 
     def __init__(self, end: str):
@@ -51,7 +51,7 @@ class CountApplication25Min(Base):
 
 class ApplicationConsumeLoan(Base):
     _event_key = 'application2_consume_loan_5min'
-    schema = 'shoufuyou_v2'
+    schema = 'sfy_v2'
     table = 'Application2'
 
     def __init__(self, end: str):
@@ -85,7 +85,7 @@ class ApplicationConsumeLoan(Base):
 
 class ApplicationCashLoan(Base):
     _event_key = 'application2_cash_loan_5min'
-    schema = 'shoufuyou_v2'
+    schema = 'sfy_v2'
     table = 'Application2'
 
     def __init__(self, end: str):

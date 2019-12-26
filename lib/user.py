@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 """
 @author: Link 
-@contact: zheng.long@shoufuyou.com
+@contact: zheng.long@sfy.com
 @module: application2
 @date: 2018/7/23
 """
@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 class User(Base):
     _event_key = 'count_user_5min'
-    schema = 'shoufuyou_v2'
+    schema = 'sfy_v2'
     table = 'User'
 
     def __init__(self, end: str):

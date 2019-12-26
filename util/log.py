@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 """
 @author: Link
-@contact: zheng.long@shoufuyou.com
+@contact: zheng.long@sfy.com
 @file: log.py
 @time: 2018.04.10
 """

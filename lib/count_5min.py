@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 """
 @author: Link 
-@contact: zheng.long@shoufuyou.com
+@contact: zheng.long@sfy.com
 @module: count_5min 
 @date: 2018/7/9 
 """
@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 class CountCashLoanOrder5Min(Base):
     _event_key = 'count_cash_loan_order_5min'
-    schema = 'shoufuyou_v2'
+    schema = 'sfy_v2'
     table = 'CashLoanOrder'
 
     def __init__(self, end: str):
